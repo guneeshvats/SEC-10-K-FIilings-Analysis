@@ -6,7 +6,7 @@ In the financial sector, transparency is key to maintaining trust and regulatory
 
 ## Project Description
 
-This project utilizes cutting-edge technologies to construct a Q&A chatbot that interfaces with SEC Edgar filings. By combining the capabilities of the Langchain Framework and Streamlit, we develop a robust tool that facilitates easy access to vital financial data and insights from SEC filings. The core of our application is the integration of a RAG pipeline, which utilizes Large Language Models (LLMs) to generate precise answers by retrieving relevant data from a vast corpus of documents. 
+This project utilizes cutting-edge technologies and modern research strategies to construct a Q&A chatbot that interfaces with SEC Edgar filings. By combining the capabilities of the Langchain Framework and Streamlit, we develop a robust tool that facilitates easy access to vital financial data and insights from SEC filings. The core of our application is the integration of a RAG pipeline, which utilizes Large Language Models (LLMs) to generate precise answers by retrieving relevant data from a vast corpus of documents. 
 
 ## Technologies Used
 
@@ -32,15 +32,20 @@ Steps from data ingestion to query response generation, highlighting the RAG com
 
 2. Install required packages:
 ```pip install -r requirements.txt```
-## Usage
+
+## To get the necessary filings from SEC-Edgar
+```python xbrl_download.py```
+
+## To ingest into the database
+```python xbrl_download.py```
+## Usage (To ask queries...) 
 
 To run the application locally:
 ```streamlit run frontend.py```
 
+## Warning on Microsoft Visual Build Tools and Redistributables
 
-## Warning on Visual Build Tools
-
-When upgrading Visual Build Tools, ensure compatibility with Python and other dependencies, as newer versions might introduce breaking changes not supported by the current project setup.
+When upgrading Visual Build Tools, ensure compatibility with Python and other dependencies, newer versions will be best supported by the current project setup.
 
 ## Future Work
 
@@ -53,5 +58,12 @@ When upgrading Visual Build Tools, ensure compatibility with Python and other de
 - [SEC EDGAR](https://www.sec.gov/edgar.shtml)
 - [Langchain Documentation](https://langchain.com/docs)
 - [Streamlit Documentation](https://docs.streamlit.io/)
+
+### Research Papers
+
+1. [Improving Retrieval for RAG based Question Answering Models on Financial Documents](https://arxiv.org/abs/2404.07221)
+2. [The Chronicles of RAG: The Retriever, the Chunk and the Generator](https://arxiv.org/abs/2401.07883)
+3. [RAG and RAU: A Survey on Retrieval-Augmented Language Model in Natural Language Processing](https://arxiv.org/abs/2404.19543)
+
 
 This README.md file serves as a comprehensive guide for understanding, installing, and utilizing the SEC Edgar Filings Analysis tool, ensuring that users can leverage this technology effectively for their financial analysis needs.
