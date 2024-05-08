@@ -52,6 +52,7 @@ When upgrading Visual Build Tools, ensure compatibility with Python and other de
 - **Dynamic Plotting**: Integrate dynamic plots to display financial metrics like revenue trends over time.
 - **Risk Factor Analysis**: Enhance the chatbot to provide detailed insights into the 'Risk Factors' section of the 10-K filings.
 - **Deep Financial Insights**: Implement features to analyze and summarize other critical sections of the SEC filings, providing comprehensive financial health indicators.
+- **Features**: We can add small features like an option for downloading the generated report about a company's financial health. Comparision for parameters between multiple companies across desired time period. Generating dynamic plots which can be tweaked by the user to analyse and understand better. option for types of plots for certain type of insights for a company. 
 
 ## References
 
