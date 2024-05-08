@@ -21,7 +21,9 @@ This project utilizes cutting-edge technologies to construct a Q&A chatbot that 
 
 ## Flow Chart of the Experiment
 
-[Include a flowchart here that illustrates the steps from data ingestion to query response generation, highlighting the RAG components and data flow.]
+Steps from data ingestion to query response generation, highlighting the RAG components and data flow : 
+![image](https://github.com/guneeshvats/SEC-10-K-FIilings-Analysis/assets/70188630/44fa97d2-9cec-4ebf-b450-8b2727f2d643)
+
 
 ## Installation
 
