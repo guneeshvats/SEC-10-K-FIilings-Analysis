@@ -19,7 +19,7 @@ This project utilizes cutting-edge technologies and modern research strategies t
 7. **SEC API**: Facilitates the automatic downloading and processing of SEC filings from the EDGAR database.
 8. **Langchain Visualizer**: Enhances debugging and visualization of the Langchain workflows within the Streamlit app.
 
-## Flow Chart of the Experiment
+## Flow Diagram 
 
 Steps from data ingestion to query response generation, highlighting the RAG components and data flow : 
 ![image](https://github.com/guneeshvats/SEC-10-K-FIilings-Analysis/assets/70188630/44fa97d2-9cec-4ebf-b450-8b2727f2d643)
