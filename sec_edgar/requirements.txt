@@ -1,0 +1,10 @@
+chromadb
+openai
+streamlit-chat
+streamlit
+langchain-visualizer
+sec-api
+langchain
+torch 
+torchvision
+torchaudio
