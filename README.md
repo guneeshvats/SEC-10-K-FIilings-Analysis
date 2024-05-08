@@ -6,7 +6,7 @@ In the financial sector, transparency is key to maintaining trust and regulatory
 
 ## Project Description
 
-This project utilizes cutting-edge technologies to construct a Q&A chatbot that interfaces with SEC Edgar filings. By combining the capabilities of the Langchain Framework and Streamlit, we develop a robust tool that facilitates easy access to vital financial data and insights from SEC filings. The core of our application is the integration of a RAG pipeline, which utilizes Large Language Models (LLMs) to generate precise answers by retrieving relevant data from a vast corpus of documents.
+This project utilizes cutting-edge technologies to construct a Q&A chatbot that interfaces with SEC Edgar filings. By combining the capabilities of the Langchain Framework and Streamlit, we develop a robust tool that facilitates easy access to vital financial data and insights from SEC filings. The core of our application is the integration of a RAG pipeline, which utilizes Large Language Models (LLMs) to generate precise answers by retrieving relevant data from a vast corpus of documents. 
 
 ## Technologies Used
 
