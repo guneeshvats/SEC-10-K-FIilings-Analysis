@@ -63,22 +63,23 @@ streamlit run frontend.py
 
 ## Insights from the 10-K Document
 
-| **Metric**            | **Formula/Explanation**                                                                 |
-|-----------------------|------------------------------------------------------------------------------------------|
-| **EBITDA**             | \( \text{Net Income} + \text{Interest} + \text{Taxes} + \text{Depreciation} + \text{Amortization} \) |
-| **Net Income**         | Total profit after all expenses. Found at the bottom of the income statement.            |
-| **Revenue**            | \( \text{Price per Item} \times \text{Number of Goods Sold} \)                           |
-| **Gross Margin**       | \( \frac{\text{Revenue} - \text{COGS}}{\text{Revenue}} \times 100 \)                     |
-| **Operating Expenses** | Expenses for daily business operations like rent, payroll, etc.                          |
-| **Cash Flow**          | Measures liquidity and the ability to generate shareholder value through cash flow.      |
-| **Asset Turnover Ratio**| \( \frac{\text{Net Sales}}{\text{Average Total Assets}} \)                              |
-| **Return on Equity (ROE)**| \( \frac{\text{Net Income}}{\text{Shareholders' Equity}} \)                           |
-| **Return on Assets (ROA)**| \( \frac{\text{Net Income}}{\text{Total Assets}} \)                                   |
-| **Current Ratio**      | \( \frac{\text{Current Assets}}{\text{Current Liabilities}} \)                           |
-| **Quick Ratio**        | \( \frac{\text{Current Assets} - \text{Inventory}}{\text{Current Liabilities}} \)        |
-| **Debt-to-Equity Ratio**| \( \frac{\text{Total Liabilities}}{\text{Shareholders' Equity}} \)                      |
-| **Interest Coverage Ratio** | \( \frac{\text{EBIT}}{\text{Interest Expense}} \)                                   |
-| **Inventory Turnover Ratio** | \( \frac{\text{COGS}}{\text{Average Inventory}} \)                                 |
+| **Metric**            | **Formula/Explanation**                                                     |
+|-----------------------|-----------------------------------------------------------------------------|
+| **EBITDA**             | Net Income + Interest + Taxes + Depreciation + Amortization                 |
+| **Net Income**         | Total profit after all expenses, found at the bottom of the income statement.|
+| **Revenue**            | Price per Item × Number of Goods Sold                                       |
+| **Gross Margin**       | (Revenue - COGS) / Revenue × 100                                            |
+| **Operating Expenses** | Expenses for daily business operations like rent, payroll, etc.             |
+| **Cash Flow**          | Measures liquidity and the ability to generate shareholder value.           |
+| **Asset Turnover Ratio**| Net Sales / Average Total Assets                                           |
+| **Return on Equity (ROE)**| Net Income / Shareholders' Equity                                        |
+| **Return on Assets (ROA)**| Net Income / Total Assets                                                |
+| **Current Ratio**      | Current Assets / Current Liabilities                                        |
+| **Quick Ratio**        | (Current Assets - Inventory) / Current Liabilities                          |
+| **Debt-to-Equity Ratio**| Total Liabilities / Shareholders' Equity                                   |
+| **Interest Coverage Ratio** | EBIT / Interest Expense                                                |
+| **Inventory Turnover Ratio** | COGS / Average Inventory                                              |
+
 
 ## References
 
