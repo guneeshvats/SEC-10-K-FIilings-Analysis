@@ -1,75 +1,84 @@
+
 # SEC Edgar Filings Analysis Project
 
 ## Introduction
 
-In the financial sector, transparency is key to maintaining trust and regulatory compliance. SEC filings, being comprehensive records submitted to the U.S. Securities and Exchange Commission, hold critical insights into the operations and risks associated with publicly traded companies. Leveraging the power of Retrieval-Augmented Generation (RAG), this project enhances the processing and querying of such complex documents, enabling more efficient and deeper analyses than traditionally possible.
+In the financial sector, SEC filings provide critical insights into company operations and risks. This project uses **Retrieval-Augmented Generation (RAG)** to efficiently query and analyze these complex documents, offering deeper insights than traditional methods.
 
 ## Project Description
 
-This project utilizes cutting-edge technologies and modern research strategies to construct a Q&A chatbot that interfaces with SEC Edgar filings. By combining the capabilities of the Langchain Framework and Streamlit, we develop a robust tool that facilitates easy access to vital financial data and insights from SEC filings. The core of our application is the integration of a RAG pipeline, which utilizes Large Language Models (LLMs) to generate precise answers by retrieving relevant data from a vast corpus of documents. 
+This project leverages **Langchain** and **Streamlit** to develop a Q&A chatbot for SEC Edgar filings. By integrating a **RAG pipeline** with **Large Language Models (LLMs)**, we retrieve relevant financial data to generate precise answers to user queries.
 
 ## Technologies Used
 
-1. **Python**: Chosen for its rich ecosystem of libraries and ease of integration with data processing and web technologies.
-2. **Streamlit**: Used to build and deploy the frontend quickly. It allows for rapid prototyping of apps with powerful interactive capabilities.
-3. **Langchain**: Provides tools and frameworks to integrate LLMs into applications, enhancing them with capabilities like retrieval-augmented processing.
-4. **OpenAI's GPT Models**: Offers state-of-the-art natural language understanding and generation.
-5. **ChromaDB**: A vector database that supports efficient storage and retrieval of large-scale, high-dimensional data.
-6. **PyTorch**: Essential for machine learning and natural language processing tasks.
-7. **SEC API**: Facilitates the automatic downloading and processing of SEC filings from the EDGAR database.
-8. **Langchain Visualizer**: Enhances debugging and visualization of the Langchain workflows within the Streamlit app.
+- **Python**: Rich ecosystem for data processing and web integration.
+- **Streamlit**: Rapid development and deployment of interactive apps.
+- **Langchain**: Facilitates integration of LLMs with document retrieval.
+- **OpenAI GPT Models**: State-of-the-art language models for natural language understanding.
+- **ChromaDB**: High-performance vector database for efficient document retrieval.
+- **SEC API**: Automates downloading and processing of SEC filings from the EDGAR database.
 
-## Flow Diagram 
+## Flow Diagram
 
-Steps from data ingestion to query response generation, highlighting the RAG components and data flow : 
-![image](https://github.com/guneeshvats/SEC-10-K-FIilings-Analysis/assets/70188630/44fa97d2-9cec-4ebf-b450-8b2727f2d643)
+A diagram depicting data ingestion, query handling, and the RAG components:
 
+![Flow Diagram](https://github.com/guneeshvats/SEC-10-K-FIilings-Analysis/assets/70188630/44fa97d2-9cec-4ebf-b450-8b2727f2d643)
 
 ## Installation
 
 1. Clone the repository:
-```git clone <repository-url>```
+   ```bash
+   git clone <repository-url>
+   ```
 
 2. Install required packages:
-```pip install -r requirements.txt```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## To get the necessary filings from SEC-Edgar
-```python xbrl_download.py```
+## Getting SEC Filings
 
-## To ingest into the database
-```python xbrl_download.py```
-## Usage (To ask queries...) 
+To download necessary filings from SEC-Edgar:
+```bash
+python xbrl_download.py
+```
 
-To run the application locally:
-```streamlit run frontend.py```
+To ingest the data into the database:
+```bash
+python ingest_data.py
+```
 
-## Warning on Microsoft Visual Build Tools and Redistributables
+## Running the Application
 
-When upgrading Visual Build Tools, ensure compatibility with Python and other dependencies, newer versions will be best supported by the current project setup.
+To ask queries locally:
+```bash
+streamlit run frontend.py
+```
 
-## Future Work
+## Future Enhancements
 
-- **Dynamic Plotting**: Integrate dynamic plots to display financial metrics like revenue trends over time.
-- **Risk Factor Analysis**: Enhance the chatbot to provide detailed insights into the 'Risk Factors' section of the 10-K filings.
-- **Deep Financial Insights**: Implement features to analyze and summarize other critical sections of the SEC filings, providing comprehensive financial health indicators.
-- **Features**: We can add small features like an option for downloading the generated report about a company's financial health. Comparision for parameters between multiple companies across desired time period. Generating dynamic plots which can be tweaked by the user to analyse and understand better. option for types of plots for certain type of insights for a company.
+- **Dynamic Plotting**: Add dynamic visualizations of financial metrics.
+- **Risk Factor Analysis**: Summarize key insights from the 'Risk Factors' section of the filings.
+- **Comprehensive Comparisons**: Compare metrics between companies over different periods with downloadable reports.
 
-- 
-## Insights from the 10-K document [Based on Research] 
-1. **EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization):** This is a measure of a company's overall financial performance and is used as an alternative to simple earnings or net income in some circumstances. It is calculated by taking the net income and adding back interest, taxes, depreciation, and amortization expenses to it.
-2. **Net Income:** This is the total profit of the company after all expenses, including taxes and interest, have been deducted from revenue. It is found at the bottom of the income statement and is often referred to as "the bottom line."
-3. **Revenue:** This represents the total amount of income generated by the sale of goods or services related to the company's primary operations. Revenue is typically calculated by multiplying the number of goods or services sold by the price per item.
-4. **Gross Margin:** This financial metric indicates the percentage of total sales revenue that the company retains after incurring the direct costs associated with producing the goods and services it sells. It is calculated by subtracting the cost of goods sold from the total revenues and dividing that number by total revenues.
-5. **Operating Expenses:** These are the expenses required for the day-to-day functioning of the business and include items like rent, equipment, inventory costs, and payroll. Operating expenses are subtracted from a company’s gross profit to determine operating income.
-6. **Cash Flow:** This is the amount of cash and cash-equivalents being transferred into and out of a business. At the most fundamental level, a company’s ability to create value for shareholders is determined by its ability to generate positive cash flows, or more specifically, maximize long-term free cash flow (FCF).
-7. **Asset Turnover Ratio:** This measures a company's ability to generate sales from its assets by comparing net sales with average total assets. It shows how efficiently a company is using its assets to produce sales.
-8. **Return on Equity (ROE):** This is a measure of the profitability of a corporation in relation to stockholders’ equity. It is calculated by dividing net income by shareholders' equity. Although net income and shareholders' equity are directly extracted from financial statements, ROE is a derived metric that shows how effectively management is using a company’s assets to create profits.
-9. **Return on Assets (ROA):** Similar to ROE, ROA measures how efficiently a company's management is using its assets to generate earnings. ROA is calculated by dividing net income by total assets. This helps investors understand how effectively their capital is being employed.
-10. **Current Ratio:** This ratio is derived by dividing current assets by current liabilities. It measures a company's ability to pay back its short-term liabilities with its short-term assets. This ratio is particularly important for assessing a company's financial liquidity.
-11. **Quick Ratio (Acid Test Ratio):** This is a more stringent test of liquidity than the current ratio. It is calculated by subtracting inventory from current assets, then dividing the result by current liabilities. It measures a company’s ability to meet its short-term obligations with its most liquid assets and is a good indicator of financial health in the short term.
-12. **Debt-to-Equity Ratio (D/E):** This ratio is calculated by dividing a company’s total liabilities by its shareholder equity. It is a measure of the degree to which a company is financing its operations through debt versus wholly-owned funds. This ratio provides insight into the company's leverage, risk, and financial health.
-13. **Interest Coverage Ratio:** This ratio is calculated by dividing a company's earnings before interest and taxes (EBIT) by its interest expenses. It measures how easily a company can pay interest on its outstanding debt with its earnings, an important metric for assessing financial stability.
-14. **Inventory Turnover Ratio:** This ratio is calculated by dividing the cost of goods sold by the average inventory. It measures how quickly inventory is sold and replaced over a period. It can provide insights into the efficiency of inventory management and sales performance.
+## Insights from the 10-K Document
+
+| **Metric**            | **Formula/Explanation**                                                                 |
+|-----------------------|------------------------------------------------------------------------------------------|
+| **EBITDA**             | \( \text{Net Income} + \text{Interest} + \text{Taxes} + \text{Depreciation} + \text{Amortization} \) |
+| **Net Income**         | Total profit after all expenses. Found at the bottom of the income statement.            |
+| **Revenue**            | \( \text{Price per Item} \times \text{Number of Goods Sold} \)                           |
+| **Gross Margin**       | \( \frac{\text{Revenue} - \text{COGS}}{\text{Revenue}} \times 100 \)                     |
+| **Operating Expenses** | Expenses for daily business operations like rent, payroll, etc.                          |
+| **Cash Flow**          | Measures liquidity and the ability to generate shareholder value through cash flow.      |
+| **Asset Turnover Ratio**| \( \frac{\text{Net Sales}}{\text{Average Total Assets}} \)                              |
+| **Return on Equity (ROE)**| \( \frac{\text{Net Income}}{\text{Shareholders' Equity}} \)                           |
+| **Return on Assets (ROA)**| \( \frac{\text{Net Income}}{\text{Total Assets}} \)                                   |
+| **Current Ratio**      | \( \frac{\text{Current Assets}}{\text{Current Liabilities}} \)                           |
+| **Quick Ratio**        | \( \frac{\text{Current Assets} - \text{Inventory}}{\text{Current Liabilities}} \)        |
+| **Debt-to-Equity Ratio**| \( \frac{\text{Total Liabilities}}{\text{Shareholders' Equity}} \)                      |
+| **Interest Coverage Ratio** | \( \frac{\text{EBIT}}{\text{Interest Expense}} \)                                   |
+| **Inventory Turnover Ratio** | \( \frac{\text{COGS}}{\text{Average Inventory}} \)                                 |
 
 ## References
 
@@ -81,7 +90,4 @@ When upgrading Visual Build Tools, ensure compatibility with Python and other de
 
 1. [Improving Retrieval for RAG based Question Answering Models on Financial Documents](https://arxiv.org/abs/2404.07221)
 2. [The Chronicles of RAG: The Retriever, the Chunk and the Generator](https://arxiv.org/abs/2401.07883)
-3. [RAG and RAU: A Survey on Retrieval-Augmented Language Model in Natural Language Processing](https://arxiv.org/abs/2404.19543)
-
-
-This README.md file serves as a comprehensive guide for understanding, installing, and utilizing the SEC Edgar Filings Analysis tool, ensuring that users can leverage this technology effectively for their financial analysis needs.
+3. [RAG and RAU: A Survey on Retrieval-Augmented Language Models](https://arxiv.org/abs/2404.19543)
