@@ -4,6 +4,7 @@
 ## Introduction
 
 In the financial sector, SEC filings provide critical insights into company operations and risks. This project uses **Retrieval-Augmented Generation (RAG)** to efficiently query and analyze these complex documents, offering deeper insights than traditional methods.
+Project with - Georgia Tech University
 
 ## Project Description
 
